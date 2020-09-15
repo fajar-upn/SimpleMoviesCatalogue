@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">70sp</dimen>
+    <dimen name="margin_bot_title">50dp</dimen>
+    <dimen name="slogan_size">18sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--splash-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="width_img_splash">350dp</dimen>
+    <dimen name="height_img_splash">470dp</dimen>
+    <dimen name="margin_top_splash">60dp</dimen>
+
+    <!--fragment_movies-->
+    <dimen name="height_card_view">280dp</dimen>
+    <dimen name="width_progress_bar">60dp</dimen>
+    <dimen name="height_progress_bar">60dp</dimen>
+    <dimen name="elevation_progress_bar">8dp</dimen>
+    <dimen name="yellow_background_movies">35dp</dimen>
+    <dimen name="margin_bottom_movies">7dp</dimen>
+
+    <!--item_card_view-->
+    <dimen name="margin_card">16dp</dimen>
+    <dimen name="margin_top_card">15dp</dimen>
+    <dimen name="corner_radius_card">10dp</dimen>
+    <dimen name="elevation_card">4dp</dimen>
+    <dimen name="height_backgroud_card">180dp</dimen>
+    <dimen name="width_image_card">160dp</dimen>
+    <dimen name="height_image_card">210dp</dimen>
+    <dimen name="margin_left_image_card">20dp</dimen>
+    <dimen name="margin_top_image_card">50dp</dimen>
+    <dimen name="title_card">30sp</dimen>
+    <dimen name="weight_icon_card">20dp</dimen>
+    <dimen name="width_description_card">150dp</dimen>
+    <dimen name="margin_left_icon_card">7dp</dimen>
+    <dimen name="margin_top_icon_card">5dp</dimen>
+    <dimen name="text_size_description_card">15sp</dimen>
+    <dimen name="width_rating_card">23dp</dimen>
+    <dimen name="width_max_rating_card">25dp</dimen>
+    <dimen name="margin_left_max_rating_card">5dp</dimen>
+
+
+</resources>

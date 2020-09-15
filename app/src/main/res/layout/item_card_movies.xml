@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_card_view"
+    android:layout_marginLeft="@dimen/margin_card"
+    android:layout_marginTop="@dimen/margin_top_card"
+    android:layout_marginRight="@dimen/margin_card"
+    app:cardCornerRadius="@dimen/corner_radius_card"
+    app:cardElevation="@dimen/elevation_card"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_poster_card_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_backgroud_card"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_menu_camera"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_poster_card"
+            android:layout_width="@dimen/width_image_card"
+            android:layout_height="@dimen/height_image_card"
+            android:layout_marginStart="@dimen/margin_left_image_card"
+            android:layout_marginTop="@dimen/margin_top_image_card"
+            android:src="@drawable/icon_film_camera"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:background="@color/yellow_tranparent"
+            android:maxLines="1"
+            android:text="@string/title_card"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_card"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_release_date_card"
+            android:layout_width="@dimen/weight_icon_card"
+            android:layout_height="@dimen/weight_icon_card"
+            android:layout_marginStart="@dimen/margin_left_icon_card"
+            android:layout_marginTop="@dimen/margin_top_icon_card"
+            android:src="@drawable/calendar_icon"
+            app:layout_constraintLeft_toRightOf="@id/iv_poster_card"
+            app:layout_constraintTop_toBottomOf="@id/iv_poster_card_background" />
+
+        <TextView
+            android:id="@+id/tv_release_date_card"
+            android:layout_width="@dimen/width_description_card"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_icon_card"
+            android:layout_marginTop="@dimen/margin_top_icon_card"
+            android:textSize="@dimen/text_size_description_card"
+            android:text="@string/date_card"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/iv_release_date_card"
+            app:layout_constraintTop_toBottomOf="@id/iv_poster_card_background" />
+
+        <ImageView
+            android:id="@+id/iv_rating_card"
+            android:layout_width="@dimen/weight_icon_card"
+            android:layout_height="@dimen/weight_icon_card"
+            android:layout_marginStart="@dimen/margin_left_icon_card"
+            android:layout_marginTop="@dimen/margin_top_icon_card"
+            android:src="@drawable/star"
+            app:layout_constraintLeft_toRightOf="@id/iv_poster_card"
+            app:layout_constraintTop_toBottomOf="@id/iv_release_date_card" />
+
+        <TextView
+            android:id="@+id/tv_rating_card"
+            android:layout_width="@dimen/width_rating_card"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_icon_card"
+            android:layout_marginTop="@dimen/margin_top_icon_card"
+            android:textSize="@dimen/text_size_description_card"
+            android:text="@string/rating_card"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/iv_rating_card"
+            app:layout_constraintTop_toBottomOf="@id/iv_release_date_card" />
+
+        <TextView
+            android:id="@+id/tv_max_rating_card"
+            android:layout_width="@dimen/width_max_rating_card"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left_max_rating_card"
+            android:layout_marginTop="@dimen/margin_top_icon_card"
+            android:textSize="15sp"
+            android:text="@string/max_rating_card"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/tv_rating_card"
+            app:layout_constraintTop_toBottomOf="@id/iv_release_date_card" />
+
+        <ImageView
+            android:id="@+id/iv_language_card"
+            android:layout_width="@dimen/weight_icon_card"
+            android:layout_height="@dimen/weight_icon_card"
+            android:layout_marginStart="@dimen/margin_left_icon_card"
+            android:layout_marginTop="@dimen/margin_top_icon_card"
+            android:src="@drawable/language_icon"
+            app:layout_constraintLeft_toRightOf="@id/iv_poster_card"
+            app:layout_constraintTop_toBottomOf="@id/iv_rating_card" />
+
+        <TextView
+            android:id="@+id/tv_language_card"
+            android:layout_width="@dimen/width_description_card"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_top_icon_card"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="@string/language_card"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/iv_language_card"
+            app:layout_constraintTop_toBottomOf="@id/tv_rating_card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
